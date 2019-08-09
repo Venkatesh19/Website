@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  $(document).ready(function(){
+    $("#navi").load("nav.html");
+    return false;
+  });
+</script>
+<section id="contactus">
+  <section class="nav">
+    <header>
+      <div id="navi">
+      </div>
+    </header>
+  </section>
+    <section class="body">
+      <div class="formContainer">
+        <form  class="contactForm" data-netlify="true">
+          <h2>Drop us a message:</h2>
+          <div>
+            <input type="text" id="name" name="name" required>
+            <label for="name" class="labelFields">Your name</label>
+          </div>
+          <div>
+            <input type="text" id="email" name="email" required>
+            <label for="email">Your email</label>
+          </div>
+          <div>
+            <textarea name="YourMessage" id="yourmessage" cols="30" rows="10" required></textarea>
+            <label for="yourmessage">Your Message</label>
+          </div>
+          <div class="submitButton">
+            <button>Submit</button>
+          </div>
+          <div class="helpText">
+            <h5>Or alternatively shoot us a message at  <a href="mailto:admin@unswbusinessone.org"> admin@unswbusinessone.org</a></h3>
+
+          </div>
+        </form>
+      </div>
+    </section>
+</section>
+</html>
